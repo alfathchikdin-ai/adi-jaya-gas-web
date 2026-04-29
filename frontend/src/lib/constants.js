@@ -1,6 +1,6 @@
 // Brand-wide constants for Adi Jaya Gas
 export const PHONE_RAW = "62881080590092";
-export const PHONE_DISPLAY = "0881-0805-90092";
+export const PHONE_DISPLAY = "0881 0805 90092";
 export const EMAIL = "adijayagas.id@gmail.com";
 export const ADDRESS = "Jl. Bougenville D9, Kunciran Indah, Kec. Pinang, Banten";
 

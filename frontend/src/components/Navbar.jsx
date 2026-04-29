@@ -75,7 +75,7 @@ export const Navbar = () => {
                         className="flex items-center gap-2 text-sm text-[#334155] hover:text-[#0A2540] font-medium"
                     >
                         <Phone size={15} />
-                        0881-0805-90092
+                        0881 0805 90092
                     </a>
                     <a
                         href={WA_LINK}

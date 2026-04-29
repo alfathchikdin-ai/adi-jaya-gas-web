@@ -53,7 +53,7 @@ export const WhyChooseUs = () => {
                     <div className="lg:col-span-7">
                         <span className="aj-overline">Mengapa Memilih Kami</span>
                         <h2 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
-                            Lebih dari sekedar supplier — kami adalah{" "}
+                            Lebih dari sekedar supplier, kami adalah{" "}
                             <span className="text-[#FF6B00]">
                                 mitra operasional
                             </span>{" "}
@@ -92,7 +92,7 @@ export const WhyChooseUs = () => {
                         </h3>
                         <p className="text-sm lg:text-base text-white/85 leading-relaxed">
                             Same-day delivery untuk wilayah Jabodetabek, jadwal
-                            fleksibel, dan tracking pengiriman real-time. Stok
+                            fleksibel, dan tracking pengiriman realtime. Stok
                             tabung selalu siap di gudang kami.
                         </p>
                     </div>

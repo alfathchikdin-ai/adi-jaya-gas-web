@@ -144,8 +144,8 @@ export const Contact = () => {
                                 className="text-[#FF6B00] flex-shrink-0"
                             />
                             <p className="text-sm text-[#0A2540] font-medium">
-                                <strong>Jam Operasional:</strong> Senin–Sabtu
-                                08.00–17.00 WIB · WhatsApp 24/7 untuk pesanan
+                                <strong>Jam Operasional:</strong> Senin sampai Sabtu
+                                08.00 hingga 17.00 WIB · WhatsApp 24/7 untuk pesanan
                                 urgent
                             </p>
                         </div>

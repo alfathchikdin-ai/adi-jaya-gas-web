@@ -84,7 +84,7 @@ export const About = () => {
                             di Jabodetabek dan sekitarnya.
                         </p>
                         <p>
-                            Kami percaya bahwa gas bukan sekadar produk — ia
+                            Kami percaya bahwa gas bukan sekadar produk. Ia
                             adalah bagian dari proses produksi pelanggan.
                             Karena itu, kami berkomitmen pada{" "}
                             <strong className="text-[#0A2540]">
