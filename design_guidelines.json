@@ -1,0 +1,147 @@
+{
+  "project_context": {
+    "domain": "Industrial Gas Supplier",
+    "theme": "Light",
+    "archetype": "Swiss & High-Contrast (Modified Corporate)",
+    "target_audience": ["Manufacturing", "Hospitals", "Laboratories", "Welding", "Universities", "F&B", "Pharma"],
+    "goals": ["Generate B2B leads", "Increase WhatsApp inquiries", "Build trust and authority", "Showcase professionalism"]
+  },
+  "design_decisions": {
+    "visual_style": "Premium, Industrial, Clean, Professional, Corporate, Trustworthy, Modern B2B",
+    "spacing_strategy": "Generous Spacing Philosophy. Use p-8 to p-16 for main sections. Bento layouts should use gap-6 or gap-8. Containers with borders must have internal padding (p-6 to p-8).",
+    "layout_strategy": "Bento grids for features. Asymmetrical layouts to break up standard blockiness. High-contrast hero section.",
+    "component_strategy": "Pure HTML/Tailwind for structural layout (no Shadcn 'Section' components). Use Shadcn UI for interactive elements (Forms, Buttons, Accordeons, Dialogs) heavily customized to match the brand. Avoid soft rounded cards; prefer sharp or max 8px radii to maintain corporate industrial feel."
+  },
+  "colors": {
+    "primary": "#0A2540",
+    "secondary": "#FFFFFF",
+    "accent": "#FF6B00",
+    "neutral": "#F8FAFC",
+    "text": {
+      "heading": "#0A2540",
+      "body": "#334155",
+      "muted": "#64748B",
+      "inverse": "#FFFFFF"
+    },
+    "background": {
+      "default": "#FFFFFF",
+      "alt": "#F8FAFC",
+      "dark": "#0A2540"
+    },
+    "borders": {
+      "light": "rgba(10, 37, 64, 0.1)",
+      "focus": "#FF6B00"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cabinet Grotesk",
+      "body": "IBM Plex Sans",
+      "installation": "Will be loaded via Google Fonts / Fontsource. Cabinet Grotesk needs @fontsource/cabinet-grotesk or similar, IBM Plex Sans via standard."
+    },
+    "scales": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight",
+      "h3": "text-2xl sm:text-3xl font-semibold tracking-tight",
+      "h4": "text-lg sm:text-xl font-medium tracking-tight",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm leading-normal",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-[#FF6B00]"
+    }
+  },
+  "animations": {
+    "hover": "Transition transform 0.2s ease, opacity 0.2s ease. Hover states must have higher contrast or lighter hue.",
+    "entrance": "Staggered fade-up for lists and bento grids using framer-motion.",
+    "scroll": "Use lenis for smooth momentum scrolling."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#FF6B00] text-white hover:bg-[#E65A00] font-semibold rounded-md px-6 py-3 transition-colors shadow-sm",
+      "secondary": "bg-transparent border-2 border-[#0A2540] text-[#0A2540] hover:bg-[#0A2540] hover:text-white font-semibold rounded-md px-6 py-3 transition-colors",
+      "outline_white": "bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0A2540] font-semibold rounded-md px-6 py-3 transition-colors"
+    },
+    "cards": {
+      "default": "bg-white border border-[#E2E8F0] rounded-lg shadow-sm hover:shadow-md transition-shadow p-6",
+      "bento_item": "bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl p-8 hover:-translate-y-1 transition-transform duration-300"
+    },
+    "inputs": {
+      "default": "bg-white border border-[#CBD5E1] rounded-md px-4 py-2 focus:ring-2 focus:ring-[#FF6B00] focus:border-transparent outline-none transition-all text-[#0A2540]"
+    }
+  },
+  "sections_breakdown": {
+    "header": {
+      "style": "Sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#E2E8F0] py-4"
+    },
+    "hero": {
+      "style": "Relative, min-h-[90vh] flex items-center bg-[#0A2540] overflow-hidden",
+      "overlay": "Absolute inset-0 bg-gradient-to-r from-[#0A2540] via-[#0A2540]/80 to-transparent z-10",
+      "content": "Relative z-20 text-white w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12"
+    },
+    "trust_indicators": {
+      "style": "bg-white py-12 border-b border-[#E2E8F0]"
+    },
+    "products": {
+      "style": "py-24 bg-[#F8FAFC]"
+    },
+    "why_choose_us": {
+      "style": "py-24 bg-white bento-grid layout"
+    },
+    "industries": {
+      "style": "py-24 bg-[#0A2540] text-white"
+    },
+    "about": {
+      "style": "py-24 bg-white"
+    },
+    "testimonials": {
+      "style": "py-24 bg-[#F8FAFC]"
+    },
+    "cta_section": {
+      "style": "py-20 bg-gradient-to-br from-[#0A2540] to-[#113A63] text-white text-center"
+    },
+    "contact": {
+      "style": "py-24 bg-white grid grid-cols-1 lg:grid-cols-2 gap-12"
+    },
+    "footer": {
+      "style": "bg-[#051320] text-[#94A3B8] py-16"
+    }
+  },
+  "media": {
+    "icons_library": "@phosphor-icons/react",
+    "images": {
+      "hero_background": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/366d20d8-9067-4dc9-b472-8e7e62481e32/images/387631c285c6c273a665516848eae2a8f865a99ba64de4230de90a2f6fc26556.png",
+        "description": "Wide-angle photograph of a modern industrial gas facility, massive clean white storage tanks with pipes, deep navy blue sky, high-tech, professional corporate feel"
+      },
+      "welding_industry": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/366d20d8-9067-4dc9-b472-8e7e62481e32/images/0ba72fa128084a1bc00d8dd4962aa5d0c74b6303ab08b364e67fc5889beddfe6.png",
+        "description": "Close-up of bright orange sparks flying from a precision welding process in a dark modern manufacturing plant"
+      },
+      "scientific_purity": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/366d20d8-9067-4dc9-b472-8e7e62481e32/images/08fe55bdf88983724839ffbf2b997e52b79eea5c6c65239f97ae9ee3cf1ecf46.png",
+        "description": "Abstract 3D render of floating molecules and atoms, clean white and bright orange colors, scientific purity concept"
+      },
+      "about_team": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/366d20d8-9067-4dc9-b472-8e7e62481e32/images/ce98e1723352baeae6d98ed84f9625fa8a73a40bafe79527bcbc3db7dad5bcbe.png",
+        "description": "Professional industrial workers in safety gear and hardhats standing confidently in front of massive white gas storage tanks"
+      },
+      "unsplash_gas_cylinders": {
+        "url": "https://images.unsplash.com/photo-1771077800818-56c3b616cca5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZ2FzJTIwY3lsaW5kZXJzJTIwdGFua3N8ZW58MHx8fHwxNzc3NDQ3MTI1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Four tall gas cylinders chained together outdoors"
+      },
+      "unsplash_lab": {
+        "url": "https://images.unsplash.com/photo-1586370392767-5ce4de129388?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxjbGVhbiUyMGxhYm9yYXRvcnklMjBzY2llbnRpZmljfGVufDB8fHx8MTc3NzQ0NzEyNXww&ixlib=rb-4.1.0&q=85",
+        "description": "woman in white long sleeve shirt wearing eyeglasses in lab"
+      }
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: @phosphor-icons/react, lenis, framer-motion, @fontsource/cabinet-grotesk, @fontsource/ibm-plex-sans",
+    "Use pure HTML and Tailwind for complex marketing bento layouts. Avoid overusing Shadcn Card component for structural grids.",
+    "Implement the provided color palette accurately. Deep Blue (#0A2540) is for primary sections/text. Orange (#FF6B00) is for CTAs and highlights.",
+    "Hero section must overlay the 'hero_background' image with a left-to-right deep blue gradient to ensure text readability.",
+    "Implement smooth scrolling using Lenis.",
+    "WhatsApp functionality: All 'Hubungi Kami' or 'Konsultasi' CTAs should link to 'https://wa.me/62881080590092'. No backend form submission required.",
+    "All interactive elements MUST have a data-testid attribute.",
+    "Use Phosphor icons (Duotone or Regular weight) for product and feature cards."
+  ]
+}
