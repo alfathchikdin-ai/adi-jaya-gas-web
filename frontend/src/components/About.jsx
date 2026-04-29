@@ -38,7 +38,7 @@ export const About = () => {
                     <div className="relative aspect-[4/5] lg:aspect-[5/6] rounded-2xl overflow-hidden border border-[#E2E8F0]">
                         <img
                             src="https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/cq8bky7n_6ABD7932-40E0-4A82-8E54-8FF82F86DFA2.jpeg"
-                            alt="Stok tabung gas industri CV. Adi Jaya Gas"
+                            alt="Stok tabung gas industri Adi Jaya Gas"
                             className="w-full h-full object-cover"
                             loading="lazy"
                         />
@@ -75,7 +75,7 @@ export const About = () => {
                     <div className="mt-6 space-y-4 text-base lg:text-[17px] text-[#475569] leading-relaxed">
                         <p>
                             <strong className="text-[#0A2540]">
-                                CV. Adi Jaya Gas
+                                Adi Jaya Gas
                             </strong>{" "}
                             adalah supplier gas industri, medis, dan specialty
                             gas yang berlokasi di Banten. Selama lebih dari

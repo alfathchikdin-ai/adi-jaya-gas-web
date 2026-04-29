@@ -40,13 +40,13 @@ export const Footer = () => {
                             <div className="w-12 h-12 rounded-md bg-white p-1 flex items-center justify-center overflow-hidden">
                                 <img
                                     src={LOGO_URL}
-                                    alt="CV. Adi Jaya Gas"
+                                    alt="Adi Jaya Gas"
                                     className="w-full h-full object-contain"
                                 />
                             </div>
                             <div>
                                 <p className="font-display font-extrabold text-base !text-white">
-                                    CV. ADI JAYA GAS
+                                    ADI JAYA GAS
                                 </p>
                                 <p className="text-[10px] uppercase tracking-[0.18em] text-[#64748B] font-semibold">
                                     Industrial · Medical · Specialty
@@ -166,7 +166,7 @@ export const Footer = () => {
 
                 <div className="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-xs">
                     <p>
-                        &copy; {new Date().getFullYear()} CV. Adi Jaya Gas.
+                        &copy; {new Date().getFullYear()} Adi Jaya Gas.
                         Hak cipta dilindungi.
                     </p>
                     <p className="text-[#64748B]">

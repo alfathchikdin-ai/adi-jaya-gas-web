@@ -40,13 +40,13 @@ export const Navbar = () => {
                     <div className="relative w-11 h-11 lg:w-12 lg:h-12 rounded-md bg-white border border-[#E2E8F0] flex items-center justify-center overflow-hidden shadow-sm">
                         <img
                             src={LOGO_URL}
-                            alt="CV. Adi Jaya Gas"
+                            alt="Adi Jaya Gas"
                             className="w-full h-full object-contain p-1"
                         />
                     </div>
                     <div className="leading-tight">
                         <p className="font-display font-extrabold text-[15px] lg:text-base text-[#0A2540] tracking-tight">
-                            CV. ADI JAYA GAS
+                            ADI JAYA GAS
                         </p>
                         <p className="text-[10px] lg:text-[11px] uppercase tracking-[0.18em] text-[#64748B] font-semibold">
                             Industrial · Medical · Specialty

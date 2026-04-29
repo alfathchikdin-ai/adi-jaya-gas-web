@@ -11,7 +11,7 @@ import {
 } from "../lib/constants";
 
 const buildWaUrl = ({ name, company, product, message }) => {
-    const text = `Halo CV. Adi Jaya Gas, saya ingin konsultasi:\n\n*Nama:* ${name || "-"}\n*Perusahaan:* ${company || "-"}\n*Produk yang dibutuhkan:* ${product || "-"}\n*Pesan:* ${message || "-"}`;
+    const text = `Halo Adi Jaya Gas, saya ingin konsultasi:\n\n*Nama:* ${name || "-"}\n*Perusahaan:* ${company || "-"}\n*Produk yang dibutuhkan:* ${product || "-"}\n*Pesan:* ${message || "-"}`;
     return `https://wa.me/${PHONE_RAW}?text=${encodeURIComponent(text)}`;
 };
 
@@ -159,7 +159,7 @@ export const Contact = () => {
                             data-testid="contact-map"
                         >
                             <iframe
-                                title="Lokasi CV. Adi Jaya Gas"
+                                title="Lokasi Adi Jaya Gas"
                                 src={MAPS_EMBED}
                                 width="100%"
                                 height="100%"

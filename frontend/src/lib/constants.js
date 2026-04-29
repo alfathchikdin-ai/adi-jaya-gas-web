@@ -1,4 +1,4 @@
-// Brand-wide constants for CV. Adi Jaya Gas
+// Brand-wide constants for Adi Jaya Gas
 export const PHONE_RAW = "62881080590092";
 export const PHONE_DISPLAY = "0881-0805-90092";
 export const EMAIL = "adijayagas.id@gmail.com";
@@ -22,13 +22,13 @@ const buildWaLink = (msg) =>
     `https://wa.me/${PHONE_RAW}?text=${encodeURIComponent(msg)}`;
 
 export const WA_DEFAULT_MSG =
-    "Halo CV. Adi Jaya Gas, saya tertarik untuk konsultasi mengenai kebutuhan gas industri. Mohon informasi lebih lanjut.";
+    "Halo Adi Jaya Gas, saya tertarik untuk konsultasi mengenai kebutuhan gas industri. Mohon informasi lebih lanjut.";
 
 export const WA_LINK = buildWaLink(WA_DEFAULT_MSG);
 
 export const waLinkFor = (productOrTopic) =>
     buildWaLink(
-        `Halo CV. Adi Jaya Gas, saya ingin menanyakan ketersediaan dan harga untuk ${productOrTopic}. Terima kasih.`,
+        `Halo Adi Jaya Gas, saya ingin menanyakan ketersediaan dan harga untuk ${productOrTopic}. Terima kasih.`,
     );
 
 export const MAPS_QUERY = encodeURIComponent(

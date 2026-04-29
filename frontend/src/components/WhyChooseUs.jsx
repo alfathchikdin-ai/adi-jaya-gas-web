@@ -78,7 +78,7 @@ export const WhyChooseUs = () => {
                 >
                     <img
                         src="https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/gdj5w2mn_IMG_5748.jpeg"
-                        alt="Armada pengiriman CV. Adi Jaya Gas"
+                        alt="Armada pengiriman Adi Jaya Gas"
                         className="absolute inset-0 w-full h-full object-cover opacity-50"
                         loading="lazy"
                     />

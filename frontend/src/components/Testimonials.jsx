@@ -14,7 +14,7 @@ const testimonials = [
         role: "Procurement Officer",
         company: "RS Mitra Sehat Tangerang",
         avatar: "SL",
-        text: "Untuk medical oxygen, kami sangat selektif. CV. Adi Jaya Gas selalu menyertakan CoA dan responsif saat ada permintaan mendesak. Mereka mengerti operasional rumah sakit.",
+        text: "Untuk medical oxygen, kami sangat selektif. Adi Jaya Gas selalu menyertakan CoA dan responsif saat ada permintaan mendesak. Mereka mengerti operasional rumah sakit.",
     },
     {
         name: "Bapak Rizky Pratama",
