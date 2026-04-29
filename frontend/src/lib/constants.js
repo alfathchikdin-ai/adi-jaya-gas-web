@@ -6,7 +6,7 @@ export const ADDRESS = "Jl. Bougenville D9, Kunciran Indah, Kec. Pinang, Banten"
 
 // Brand assets (uploaded by client)
 export const LOGO_URL =
-    "https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/njievpy9_Where%20Every%20Cake%20Meets%20the%20Cloud.%20%28Konten%20Instagram%20%2845%29%29.jpeg";
+    "https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/bgx5hjdw_Where%20Every%20Cake%20Meets%20the%20Cloud.%20%28Konten%20Instagram%20%2845%29%29.jpeg";
 export const PHOTO_HERO =
     "https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/qiqqt1ux_IMG_4610.jpeg";
 export const PHOTO_FACILITY =
