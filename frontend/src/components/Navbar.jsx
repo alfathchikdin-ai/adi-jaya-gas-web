@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Phone, Flame } from "lucide-react";
-import { WA_LINK } from "../lib/constants";
+import { Menu, X, Phone } from "lucide-react";
+import { WA_LINK, LOGO_URL } from "../lib/constants";
 
 const links = [
     { label: "Beranda", href: "#beranda" },
@@ -37,13 +37,12 @@ export const Navbar = () => {
                     data-testid="navbar-logo"
                     className="flex items-center gap-3 group"
                 >
-                    <div className="relative w-10 h-10 lg:w-11 lg:h-11 rounded-md bg-[#0A2540] flex items-center justify-center overflow-hidden">
-                        <Flame
-                            size={22}
-                            className="text-[#FF6B00] relative z-10"
-                            strokeWidth={2.5}
+                    <div className="relative w-11 h-11 lg:w-12 lg:h-12 rounded-md bg-white border border-[#E2E8F0] flex items-center justify-center overflow-hidden shadow-sm">
+                        <img
+                            src={LOGO_URL}
+                            alt="CV. Adi Jaya Gas"
+                            className="w-full h-full object-contain p-1"
                         />
-                        <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-[#FF6B00] rounded-sm" />
                     </div>
                     <div className="leading-tight">
                         <p className="font-display font-extrabold text-[15px] lg:text-base text-[#0A2540] tracking-tight">

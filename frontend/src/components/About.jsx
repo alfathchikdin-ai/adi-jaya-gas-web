@@ -37,8 +37,8 @@ export const About = () => {
                 >
                     <div className="relative aspect-[4/5] lg:aspect-[5/6] rounded-2xl overflow-hidden border border-[#E2E8F0]">
                         <img
-                            src="https://static.prod-images.emergentagent.com/jobs/366d20d8-9067-4dc9-b472-8e7e62481e32/images/ce98e1723352baeae6d98ed84f9625fa8a73a40bafe79527bcbc3db7dad5bcbe.png"
-                            alt="Tim profesional CV. Adi Jaya Gas"
+                            src="https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/cq8bky7n_6ABD7932-40E0-4A82-8E54-8FF82F86DFA2.jpeg"
+                            alt="Stok tabung gas industri CV. Adi Jaya Gas"
                             className="w-full h-full object-cover"
                             loading="lazy"
                         />

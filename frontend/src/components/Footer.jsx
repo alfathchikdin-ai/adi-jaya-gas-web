@@ -1,10 +1,11 @@
-import { Flame, Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import {
     PHONE_DISPLAY,
     PHONE_RAW,
     EMAIL,
     ADDRESS,
     MAPS_LINK,
+    LOGO_URL,
 } from "../lib/constants";
 
 const navLinks = [
@@ -36,11 +37,11 @@ export const Footer = () => {
                     {/* Brand */}
                     <div className="lg:col-span-4">
                         <div className="flex items-center gap-3 mb-5">
-                            <div className="w-11 h-11 rounded-md bg-white/5 border border-white/10 flex items-center justify-center">
-                                <Flame
-                                    size={22}
-                                    className="text-[#FF6B00]"
-                                    strokeWidth={2.5}
+                            <div className="w-12 h-12 rounded-md bg-white p-1 flex items-center justify-center overflow-hidden">
+                                <img
+                                    src={LOGO_URL}
+                                    alt="CV. Adi Jaya Gas"
+                                    className="w-full h-full object-contain"
                                 />
                             </div>
                             <div>
