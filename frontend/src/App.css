@@ -1,34 +1,77 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Component-specific styles for Adi Jaya Gas landing */
+
+.hero-bg {
+    background-color: #0a2540;
+    background-image: linear-gradient(
+            120deg,
+            rgba(10, 37, 64, 0.96) 0%,
+            rgba(10, 37, 64, 0.85) 45%,
+            rgba(10, 37, 64, 0.45) 100%
+        ),
+        url("https://static.prod-images.emergentagent.com/jobs/366d20d8-9067-4dc9-b472-8e7e62481e32/images/387631c285c6c273a665516848eae2a8f865a99ba64de4230de90a2f6fc26556.png");
+    background-size: cover;
+    background-position: center right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.cta-bg {
+    background: radial-gradient(
+            ellipse at top right,
+            rgba(255, 107, 0, 0.18) 0%,
+            transparent 50%
+        ),
+        linear-gradient(135deg, #0a2540 0%, #113a63 100%);
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.dot-pattern {
+    background-image: radial-gradient(
+        rgba(10, 37, 64, 0.12) 1px,
+        transparent 1px
+    );
+    background-size: 18px 18px;
 }
 
-.App-link {
-    color: #61dafb;
+.dot-pattern-light {
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.08) 1px,
+        transparent 1px
+    );
+    background-size: 22px 22px;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.product-card {
+    transition:
+        transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+.product-card:hover {
+    transform: translateY(-6px);
+    border-color: #ff6b00;
+    box-shadow: 0 30px 60px -30px rgba(10, 37, 64, 0.25);
+}
+
+.industry-card {
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.industry-card:hover {
+    background-color: rgba(255, 107, 0, 0.95);
+    transform: translateY(-4px);
+}
+.industry-card:hover .industry-icon-wrap {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #ff6b00 0%, #ffa365 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.divider-orange {
+    width: 56px;
+    height: 4px;
+    background: #ff6b00;
+    border-radius: 2px;
+    display: inline-block;
 }
