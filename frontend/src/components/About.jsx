@@ -37,8 +37,8 @@ export const About = () => {
                 >
                     <div className="relative aspect-[4/5] lg:aspect-[5/6] rounded-2xl overflow-hidden border border-[#E2E8F0]">
                         <img
-                            src="https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/yjbo3qze_IMG_4591.jpeg"
-                            alt="Gudang stok tabung gas Adi Jaya Gas"
+                            src="https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/xptca4oh_WhatsApp%20Image%202026-04-30%20at%2000.27.27.jpeg"
+                            alt="Stok tabung gas O2, Argon, CO2 Adi Jaya Gas"
                             className="w-full h-full object-cover"
                             loading="lazy"
                         />
