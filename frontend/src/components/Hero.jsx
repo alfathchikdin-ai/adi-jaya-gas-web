@@ -34,13 +34,6 @@ export const Hero = () => {
                     transition={{ duration: 0.7, ease: "easeOut" }}
                     className="lg:col-span-7 text-white"
                 >
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm mb-6">
-                        <span className="w-2 h-2 rounded-full bg-[#FF6B00] animate-pulse" />
-                        <span className="text-xs font-semibold tracking-[0.18em] uppercase text-white/90">
-                            Supplier Gas Resmi · Banten
-                        </span>
-                    </div>
-
                     <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold !text-white leading-[1.05] tracking-tight">
                         Supplier Gas Industri{" "}
                         <span className="relative inline-block">
