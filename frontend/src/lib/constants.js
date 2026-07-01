@@ -12,7 +12,7 @@ export const PHOTO_HERO =
 export const PHOTO_FACILITY =
     "https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/cq8bky7n_6ABD7932-40E0-4A82-8E54-8FF82F86DFA2.jpeg";
 export const PHOTO_DELIVERY =
-    "https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/gdj5w2mn_IMG_5748.jpeg";
+    "/delivery-ajg.jpeg";
 export const PHOTO_CYLINDERS_A =
     "https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/0948lml7_IMG_6079.jpeg";
 export const PHOTO_CYLINDERS_B =
