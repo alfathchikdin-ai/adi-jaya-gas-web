@@ -77,7 +77,7 @@ export const WhyChooseUs = () => {
                     className="relative rounded-xl overflow-hidden border border-[#0A2540] mb-6 bg-[#0A2540] min-h-[260px]"
                 >
                     <img
-                        src="https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/gdj5w2mn_IMG_5748.jpeg"
+                        src="/delivery-ajg.jpeg"
                         alt="Armada pengiriman Adi Jaya Gas"
                         className="absolute inset-0 w-full h-full object-cover opacity-50"
                         loading="lazy"
