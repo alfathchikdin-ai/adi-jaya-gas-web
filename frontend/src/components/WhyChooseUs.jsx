@@ -88,12 +88,11 @@ export const WhyChooseUs = () => {
                             <Truck size={22} strokeWidth={2.2} />
                         </div>
                         <h3 className="font-display text-2xl lg:text-3xl font-bold !text-white mb-3 leading-tight">
-                            Pengiriman Cepat dengan Armada Sendiri
+                            Pengiriman Cepat dan Terjadwal
                         </h3>
                         <p className="text-sm lg:text-base text-white/85 leading-relaxed">
-                            Same-day delivery untuk wilayah Jabodetabek, jadwal
-                            fleksibel, dan tracking pengiriman realtime. Stok
-                            tabung selalu siap di gudang kami.
+                            Kami memastikan pengiriman berjalan aman dan tepat waktu, agar operasional
+                            anda tetap lancar tanpa hambatan. 
                         </p>
                     </div>
                 </motion.div>
