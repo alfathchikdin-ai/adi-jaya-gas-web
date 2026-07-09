@@ -37,13 +37,11 @@ export const Navbar = () => {
                     data-testid="navbar-logo"
                     className="flex items-center gap-3 group"
                 >
-                    <div className="relative w-11 h-11 lg:w-12 lg:h-12 rounded-md bg-white border border-[#E2E8F0] flex items-center justify-center overflow-hidden shadow-sm">
-                        <img
-                            src={LOGO_URL}
-                            alt="Adi Jaya Gas"
-                            className="w-full h-full object-contain p-1"
-                        />
-                    </div>
+                    <img
+                        src={LOGO_URL}
+                        alt="Adi Jaya Gas"
+                        className="h-10 w-auto shrink-0 object-contain sm:h-11 lg:h-12"
+                    />
                     <div className="leading-tight">
                         <p className="font-display font-extrabold text-[15px] lg:text-base text-[#0A2540] tracking-tight">
                             ADI JAYA GAS
