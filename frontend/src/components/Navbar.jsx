@@ -40,7 +40,7 @@ export const Navbar = () => {
                     <img
                         src={LOGO_URL}
                         alt="Adi Jaya Gas"
-                        className="h-10 w-auto shrink-0 object-contain sm:h-11 lg:h-12"
+                        className="h-16 w-auto shrink-0 object-contain sm:h-20 lg:h-24 xl:h-28"
                     />
                     <div className="leading-tight">
                         <p className="font-display font-extrabold text-[15px] lg:text-base text-[#0A2540] tracking-tight">
