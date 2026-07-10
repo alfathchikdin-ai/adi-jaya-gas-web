@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, PhoneCall } from "lucide-react";
-import { WA_LINK, PHONE_RAW } from "../lib/constants";
+import { WA_LINK, PHONE_RAW, openWhatsAppLink } from "../lib/constants";
 
 export const CTASection = () => {
     return (
@@ -36,6 +36,10 @@ export const CTASection = () => {
                     <div className="mt-9 flex flex-wrap gap-3 justify-center">
                         <a
                             href={WA_LINK}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                openWhatsAppLink(WA_LINK);
+                            }}
                             target="_blank"
                             rel="noopener noreferrer"
                             data-testid="cta-section-whatsapp"

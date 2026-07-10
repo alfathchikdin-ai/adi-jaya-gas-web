@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Atom, Wind, Flame, Beaker, Droplet, FlaskConical } from "lucide-react";
-import { waLinkFor } from "../lib/constants";
+import { waLinkFor, openWhatsAppLink } from "../lib/constants";
 
 const products = [
     {
@@ -129,6 +129,10 @@ export const Products = () => {
 
                                     <a
                                         href={waLinkFor(p.name)}
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            openWhatsAppLink(waLinkFor(p.name));
+                                        }}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         data-testid={`product-cta-${p.id}`}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import { WA_LINK, LOGO_URL } from "../lib/constants";
+import { WA_LINK, LOGO_URL, openWhatsAppLink } from "../lib/constants";
 
 const links = [
     { label: "Beranda", href: "#beranda" },
@@ -77,6 +77,10 @@ export const Navbar = () => {
                     </a>
                     <a
                         href={WA_LINK}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            openWhatsAppLink(WA_LINK);
+                        }}
                         target="_blank"
                         rel="noopener noreferrer"
                         data-testid="navbar-cta-button"
@@ -114,6 +118,10 @@ export const Navbar = () => {
                         ))}
                         <a
                             href={WA_LINK}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                openWhatsAppLink(WA_LINK);
+                            }}
                             target="_blank"
                             rel="noopener noreferrer"
                             data-testid="navbar-mobile-cta"

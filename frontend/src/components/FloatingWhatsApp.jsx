@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { MessageCircle, X, ArrowRight } from "lucide-react";
-import { WA_LINK } from "../lib/constants";
+import { WA_LINK, openWhatsAppLink } from "../lib/constants";
 
 export const FloatingWhatsApp = () => {
     const [open, setOpen] = useState(false);
@@ -57,6 +57,10 @@ export const FloatingWhatsApp = () => {
                             </div>
                             <a
                                 href={WA_LINK}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    openWhatsAppLink(WA_LINK);
+                                }}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 data-testid="whatsapp-popup-cta"
@@ -94,6 +98,10 @@ export const FloatingWhatsApp = () => {
                 </a>
                 <a
                     href={WA_LINK}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        openWhatsAppLink(WA_LINK);
+                    }}
                     target="_blank"
                     rel="noopener noreferrer"
                     data-testid="mobile-sticky-whatsapp"

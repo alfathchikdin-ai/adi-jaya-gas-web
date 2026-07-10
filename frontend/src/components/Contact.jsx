@@ -8,6 +8,7 @@ import {
     ADDRESS,
     MAPS_EMBED,
     MAPS_LINK,
+    openWhatsAppLink,
 } from "../lib/constants";
 
 const buildWaUrl = ({ name, company, product, message }) => {
@@ -29,7 +30,7 @@ export const Contact = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         const url = buildWaUrl(form);
-        window.open(url, "_blank", "noopener,noreferrer");
+        openWhatsAppLink(url);
     };
 
     const items = [
@@ -91,6 +92,12 @@ export const Contact = () => {
                                     <a
                                         key={it.label}
                                         href={it.href}
+                                        onClick={(e) => {
+                                            if (it.label === "WhatsApp") {
+                                                e.preventDefault();
+                                                openWhatsAppLink(it.href);
+                                            }
+                                        }}
                                         target={
                                             it.label === "Telepon"
                                                 ? undefined

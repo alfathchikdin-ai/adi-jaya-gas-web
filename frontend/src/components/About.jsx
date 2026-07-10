@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, ShieldCheck, HeartHandshake, Sparkles } from "lucide-react";
-import { WA_LINK } from "../lib/constants";
+import { WA_LINK, openWhatsAppLink } from "../lib/constants";
 
 const pillars = [
     {
@@ -121,6 +121,10 @@ export const About = () => {
                     <div className="mt-8">
                         <a
                             href={WA_LINK}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                openWhatsAppLink(WA_LINK);
+                            }}
                             target="_blank"
                             rel="noopener noreferrer"
                             data-testid="about-cta"

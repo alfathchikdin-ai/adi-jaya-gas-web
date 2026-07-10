@@ -7,7 +7,7 @@ import {
     ShieldCheck,
     Award,
 } from "lucide-react";
-import { WA_LINK } from "../lib/constants";
+import { WA_LINK, openWhatsAppLink } from "../lib/constants";
 
 const features = [
     { icon: Clock, label: "Layanan 24/7" },
@@ -64,6 +64,10 @@ export const Hero = () => {
                     <div className="mt-8 flex flex-wrap gap-3">
                         <a
                             href={WA_LINK}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                openWhatsAppLink(WA_LINK);
+                            }}
                             target="_blank"
                             rel="noopener noreferrer"
                             data-testid="hero-primary-cta"
@@ -77,6 +81,10 @@ export const Hero = () => {
                         </a>
                         <a
                             href={WA_LINK}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                openWhatsAppLink(WA_LINK);
+                            }}
                             target="_blank"
                             rel="noopener noreferrer"
                             data-testid="hero-whatsapp-cta"
@@ -167,6 +175,10 @@ export const Hero = () => {
                             </div>
                             <a
                                 href={WA_LINK}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    openWhatsAppLink(WA_LINK);
+                                }}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 data-testid="hero-quote-cta"

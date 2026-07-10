@@ -17,8 +17,38 @@ export const PHOTO_CYLINDERS_A =
 export const PHOTO_CYLINDERS_B =
     "https://customer-assets.emergentagent.com/job_industrial-gas-id/artifacts/342bhrua_IMG_5951.jpeg";
 
-const buildWaLink = (msg) =>
-    `https://wa.me/${PHONE_RAW}?text=${encodeURIComponent(msg)}`;
+const pushWhatsAppEvent = () => {
+    if (typeof window === "undefined") return;
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: "whatsapp_click",
+        contact_method: "whatsapp",
+        source: "website",
+    });
+};
+
+export const buildWaLink = (msg, { trackClick = false } = {}) => {
+    const url = `https://wa.me/${PHONE_RAW}?text=${encodeURIComponent(msg)}`;
+
+    if (trackClick) {
+        pushWhatsAppEvent();
+    }
+
+    return url;
+};
+
+export const openWhatsAppLink = (url, { trackClick = true } = {}) => {
+    if (trackClick) {
+        pushWhatsAppEvent();
+    }
+
+    if (typeof window !== "undefined" && url) {
+        window.open(url, "_blank", "noopener,noreferrer");
+    }
+
+    return url;
+};
 
 export const WA_DEFAULT_MSG =
     "Halo Adi Jaya Gas, saya tertarik untuk konsultasi mengenai kebutuhan gas industri. Mohon informasi lebih lanjut.";
