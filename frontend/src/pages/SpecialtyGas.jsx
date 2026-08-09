@@ -3,80 +3,87 @@ import {
     ArrowRight,
     CheckCircle2,
     Factory,
-    Flame,
     Hospital,
     MessageCircle,
     ShieldCheck,
     Truck,
     Wrench,
 } from "lucide-react";
+
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { FloatingWhatsApp } from "../components/FloatingWhatsApp";
-import { buildWaLink, openWhatsAppLink } from "../lib/constants";
 
-const productName = "Specialty Gas";
-const productFormula = "Custom";
-const productWaMessage =
-    "Halo Adi Jaya Gas, saya ingin menanyakan ketersediaan Specialty Gas. Mohon info harga dan ukuran tabung yang tersedia.";
-const productWaLink = buildWaLink(productWaMessage);
+import {
+    buildWaLink,
+    openWhatsAppLink,
+} from "../lib/constants";
+
+const specialtyGasWaMessage =
+    "Halo Adi Jaya Gas, saya ingin menanyakan ketersediaan Specialty Gas. Mohon info jenis gas, grade, dan ukuran tabung yang tersedia.";
+
+const specialtyGasWaLink = buildWaLink(specialtyGasWaMessage);
 
 const overviewCards = [
     {
-        title: "Laboratorium",
-        description: "Untuk kebutuhan pengujian dan analisis presisi.",
+        title: "UHP Gas",
+        description:
+            "Gas ultra high purity untuk kebutuhan laboratorium, analisis, dan aplikasi industri tertentu.",
     },
     {
-        title: "Industri",
-        description: "Untuk kebutuhan operasional industri dan manufaktur.",
+        title: "Calibration Gas",
+        description:
+            "Gas kalibrasi untuk kebutuhan pengujian dan kalibrasi instrumen sesuai spesifikasi.",
     },
     {
-        title: "Quality Control",
-        description: "Mendukung proses kontrol kualitas dan validasi hasil.",
+        title: "Gas Mixture",
+        description:
+            "Gas campuran dengan komposisi tertentu untuk kebutuhan aplikasi khusus.",
     },
     {
-        title: "Kustom",
-        description: "Untuk kebutuhan spesifik sesuai aplikasi atau proses kerja.",
+        title: "Laboratorium & Industri",
+        description:
+            "Untuk kebutuhan analisis, penelitian, quality control, dan aplikasi industri.",
     },
 ];
 
 const applications = [
     {
-        title: "Laboratorium",
+        title: "UHP Gas",
         description:
-            "Digunakan untuk kebutuhan uji kualitas, analisis, dan observasi yang presisi.",
-        icon: Hospital,
-    },
-    {
-        title: "Fabrikasi",
-        description:
-            "Mendukung proses fabrikasi dan pengujian kebutuhan industri khusus.",
+            "Untuk aplikasi yang membutuhkan gas dengan kemurnian tinggi sesuai spesifikasi.",
         icon: Factory,
     },
     {
-        title: "Kebutuhan Khusus",
+        title: "Calibration Gas",
         description:
-            "Untuk kebutuhan proses dan aplikasi yang memerlukan spesifikasi tertentu.",
+            "Untuk kebutuhan kalibrasi dan pengujian instrumen sesuai metode dan spesifikasi.",
+        icon: ShieldCheck,
+    },
+    {
+        title: "Gas Mixture",
+        description:
+            "Untuk kebutuhan gas campuran dengan komposisi tertentu pada aplikasi khusus.",
         icon: Wrench,
     },
     {
-        title: "Produksi",
+        title: "Laboratorium",
         description:
-            "Mendukung kebutuhan produksi berkelanjutan dengan kontrol kualitas yang baik.",
-        icon: Flame,
+            "Untuk analisis, penelitian, quality control, dan kebutuhan laboratorium profesional.",
+        icon: Hospital,
     },
 ];
 
 const specChecklist = [
-    "Melayani kebutuhan bisnis dan industri",
+    "Melayani kebutuhan specialty gas dan aplikasi khusus",
     "Ketersediaan dapat dikonfirmasi sebelum pemesanan",
-    "Pengiriman ke area Tangerang dan Jakarta",
-    "Melayani kebutuhan rutin maupun volume tertentu",
+    "Pengiriman ke seluruh Jabodetabek dan area sekitarnya",
+    "Spesifikasi gas dapat disesuaikan dengan kebutuhan aplikasi",
 ];
 
 const specRows = [
-    ["Nama Produk", productName],
-    ["Rumus Kimia", productFormula],
+    ["Nama Produk", "Specialty Gas"],
+    ["Jenis", "UHP / Calibration / Gas Mixture"],
     ["Bentuk", "Compressed Gas"],
     ["Kategori", "Specialty Gas"],
     ["Kemasan", "Cylinder"],
@@ -87,21 +94,21 @@ const specRows = [
 
 const whyAjgCards = [
     {
-        title: "Pengiriman Jabodetabek",
+        title: "Pengiriman",
         description:
             "Pengiriman ke seluruh Jabodetabek dan area sekitarnya.",
         icon: Truck,
     },
     {
-        title: "Kebutuhan Bisnis",
+        title: "Kebutuhan Operasional",
         description:
-            "Melayani kebutuhan workshop, fabrikasi, manufaktur, dan customer profesional.",
+            "Melayani kebutuhan laboratorium, industri, quality control, dan aplikasi khusus.",
         icon: ShieldCheck,
     },
     {
         title: "Cek Ketersediaan",
         description:
-            "Konfirmasi kebutuhan dan ketersediaan sebelum melakukan pemesanan.",
+            "Konfirmasi jenis gas, spesifikasi, dan ketersediaan sebelum melakukan pemesanan.",
         icon: CheckCircle2,
     },
 ];
@@ -110,28 +117,29 @@ const faqs = [
     {
         question: "Specialty Gas digunakan untuk apa?",
         answer:
-            "Specialty Gas digunakan untuk kebutuhan spesifik industri atau laboratorium yang memerlukan formulasi dan kualitas gas sesuai aplikasi tertentu.",
+            "Specialty Gas digunakan untuk berbagai aplikasi khusus seperti laboratorium, analisis, kalibrasi instrumen, quality control, penelitian, dan kebutuhan industri tertentu.",
     },
     {
-        question: "Apakah Adi Jaya Gas menyediakan Specialty Gas untuk kebutuhan khusus?",
+        question: "Apa saja jenis Specialty Gas yang tersedia?",
         answer:
-            "Ya. Kami melayani kebutuhan Specialty Gas untuk kebutuhan industri, laboratorium, dan aplikasi dengan spesifikasi tertentu.",
+            "Specialty Gas dapat mencakup UHP Gas, Calibration Gas, dan Gas Mixture sesuai kebutuhan aplikasi dan spesifikasi yang diperlukan.",
     },
     {
-        question: "Apakah bisa dikirim ke Tangerang dan Jakarta?",
+        question: "Apakah Specialty Gas bisa dibuat sesuai kebutuhan?",
         answer:
-            "Ya. Kami melayani pengiriman di area Tangerang, Jakarta, dan area sekitar sesuai jangkauan pengiriman.",
+            "Untuk kebutuhan tertentu, jenis, grade, dan komposisi gas dapat disesuaikan berdasarkan aplikasi dan spesifikasi yang dibutuhkan. Hubungi kami untuk pengecekan.",
     },
     {
-        question: "Bagaimana cara mengetahui ketersediaan Specialty Gas?",
+        question: "Bagaimana cara mengetahui harga Specialty Gas?",
         answer:
-            "Ketersediaan dapat dikonfirmasi sesuai kebutuhan spesifik dan jumlah pemesanan. Hubungi kami untuk mendapatkan informasi lebih lanjut.",
+            "Harga dapat berbeda berdasarkan jenis gas, grade, komposisi, ukuran tabung, jumlah kebutuhan, dan lokasi pengiriman. Hubungi kami untuk mendapatkan penawaran sesuai kebutuhan Anda.",
     },
 ];
 
 export function SpecialtyGas() {
     useEffect(() => {
-        document.title = "Supplier Specialty Gas Tangerang & Jakarta | Adi Jaya Gas";
+        document.title =
+            "Supplier Specialty Gas Industri Tangerang & Jakarta | Adi Jaya Gas";
     }, []);
 
     return (
@@ -139,11 +147,12 @@ export function SpecialtyGas() {
             <Navbar />
 
             <main>
+                {/* HERO */}
                 <section
                     className="relative overflow-hidden pt-28 pb-20 lg:pt-32 lg:pb-24 text-white"
                     style={{
                         backgroundImage:
-                            "linear-gradient(90deg, rgba(10, 37, 64, 0.90) 0%, rgba(10, 37, 64, 0.72) 50%, rgba(10, 37, 64, 0.45) 100%), url('/delivery-ajg.jpeg')",
+                            "linear-gradient(90deg, rgba(10, 37, 64, 0.90) 0%, rgba(10, 37, 64, 0.72) 50%, rgba(10, 37, 64, 0.45) 100%), url('/specialtygas.jpeg')",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundRepeat: "no-repeat",
@@ -151,40 +160,57 @@ export function SpecialtyGas() {
                     }}
                 >
                     <div className="absolute inset-0 dot-pattern-light opacity-60 pointer-events-none" />
+
                     <div className="absolute -bottom-28 -right-20 w-[400px] h-[400px] rounded-full bg-[#FF6B00]/15 blur-3xl pointer-events-none" />
 
                     <div className="aj-container relative z-10 grid gap-10 lg:grid-cols-12 lg:items-center">
+
+                        {/* HERO LEFT */}
                         <div className="lg:col-span-7">
-                            <span className="aj-overline !text-[#FF8B33]">SPECIALTY GAS</span>
+                            <span className="aj-overline !text-[#FF8B33]">
+                                SPECIALTY GAS
+                            </span>
+
                             <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight text-white">
-                                <span style={{ color: "#FFFFFF" }}>Supplier Specialty Gas</span>
+                                <span style={{ color: "#FFFFFF" }}>
+                                    Supplier Specialty Gas
+                                </span>
+
                                 <span className="block">
-                                    <span className="gradient-text">Laboratorium & Industri</span>
+                                    <span className="gradient-text">
+                                        Industri
+                                    </span>
                                 </span>
                             </h1>
-                            <p className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed" style={{ color: "#FFFFFF" }}>
-                                Specialty Gas untuk kebutuhan laboratorium, industri,
-                                dan aplikasi khusus yang memerlukan gas dengan
-                                spesifikasi yang tepat.
+
+                            <p
+                                className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed"
+                                style={{ color: "#FFFFFF" }}
+                            >
+                                Specialty Gas untuk kebutuhan industri,
+                                laboratorium, quality control, penelitian,
+                                dan berbagai kebutuhan profesional.
                             </p>
 
                             <div className="mt-9 flex flex-wrap gap-3">
                                 <a
-                                    href={productWaLink}
+                                    href={specialtyGasWaLink}
                                     onClick={(e) => {
                                         e.preventDefault();
-                                        openWhatsAppLink(productWaLink);
+                                        openWhatsAppLink(specialtyGasWaLink);
                                     }}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn-primary !px-7 !py-3.5 text-base group"
                                 >
                                     Tanya Ketersediaan
+
                                     <ArrowRight
                                         size={18}
                                         className="group-hover:translate-x-1 transition-transform"
                                     />
                                 </a>
+
                                 <a
                                     href="#spesifikasi"
                                     className="btn-outline-white !px-7 !py-3.5 text-base"
@@ -195,14 +221,19 @@ export function SpecialtyGas() {
                             </div>
                         </div>
 
+                        {/* HERO RIGHT */}
                         <div className="lg:col-span-5">
                             <div className="relative mx-auto max-w-md">
+
                                 <div className="absolute -inset-4 rounded-full bg-[#FF6B00]/20 blur-3xl" />
+
                                 <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 p-6 shadow-2xl backdrop-blur-xl">
+
                                     <div className="flex items-center justify-between mb-6">
                                         <div className="aj-overline !text-[#FF8B33]">
                                             Specialty Gas
                                         </div>
+
                                         <div className="flex gap-2">
                                             <span className="h-2.5 w-2.5 rounded-full bg-[#FF6B00]" />
                                             <span className="h-2.5 w-2.5 rounded-full bg-white/30" />
@@ -210,68 +241,104 @@ export function SpecialtyGas() {
                                         </div>
                                     </div>
 
+                                    {/* SPECIALTY GAS CARD */}
                                     <div className="rounded-2xl border border-white/10 bg-[#0A2540]/60 p-6">
-                                        <div className="flex items-center justify-between gap-4">
-                                            <div>
-                                                <p className="text-xs uppercase tracking-[0.24em]" style={{ color: "#CBD5E1" }}>
-                                                    Custom Grade
-                                                </p>
-                                                <p className="mt-3 font-display text-4xl font-bold" style={{ color: "#FFFFFF" }}>
-                                                    Gas
-                                                </p>
-                                            </div>
-                                            <div className="rounded-xl border border-[#FF6B00]/30 bg-[#FF6B00]/10 px-3 py-2 text-right">
+
+                                        <div className="relative flex items-center justify-start">
+    <p
+        className="text-sm md:text-base uppercase tracking-[0.24em] font-semibold text-left"
+                                                style={{ color: "#FFFFFF" }}
+                                            >
+                                                SPECIALTY GAS
+                                            </p>
+
+                                            <div className="absolute right-0 rounded-xl border border-[#FF6B00]/30 bg-[#FF6B00]/10 px-3 py-2 text-right">
                                                 <p className="text-[10px] uppercase tracking-[0.18em] text-[#FFB278]">
                                                     Purity
                                                 </p>
+
                                                 <p className="text-sm font-bold text-[#FFB278]">
-                                                    Custom
+                                                    Sesuai kebutuhan
                                                 </p>
                                             </div>
                                         </div>
 
                                         <div className="mt-6 space-y-3 text-sm text-white">
+
                                             <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
-                                                <span style={{ color: "#FFFFFF" }}>Volume</span>
-                                                <span className="font-semibold" style={{ color: "#FFFFFF" }}>
+                                                <span style={{ color: "#FFFFFF" }}>
+                                                    Volume
+                                                </span>
+
+                                                <span
+                                                    className="font-semibold"
+                                                    style={{ color: "#FFFFFF" }}
+                                                >
                                                     Sesuai kebutuhan
                                                 </span>
                                             </div>
+
                                             <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
-                                                <span style={{ color: "#FFFFFF" }}>Pengiriman</span>
-                                                <span className="font-semibold" style={{ color: "#FFFFFF" }}>
+                                                <span style={{ color: "#FFFFFF" }}>
+                                                    Pengiriman
+                                                </span>
+
+                                                <span
+                                                    className="font-semibold"
+                                                    style={{ color: "#FFFFFF" }}
+                                                >
                                                     Jabodetabek & Sekitarnya
                                                 </span>
                                             </div>
+
                                             <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
-                                                <span style={{ color: "#FFFFFF" }}>Penggunaan</span>
-                                                <span className="font-semibold" style={{ color: "#FFFFFF" }}>
-                                                    Khusus & Lab
+                                                <span style={{ color: "#FFFFFF" }}>
+                                                    Penggunaan
+                                                </span>
+
+                                                <span
+                                                    className="font-semibold"
+                                                    style={{ color: "#FFFFFF" }}
+                                                >
+                                                    Laboratorium & Industri
                                                 </span>
                                             </div>
+
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </section>
 
+                {/* OVERVIEW */}
                 <section className="py-20 lg:py-24">
                     <div className="aj-container">
+
                         <div className="mx-auto max-w-3xl text-center">
-                            <span className="aj-overline !text-[#FF6B00]">SPECIALTY GAS</span>
+
+                            <span className="aj-overline !text-[#FF6B00]">
+                                SPECIALTY GAS
+                            </span>
+
                             <h2 className="mt-4 font-display text-3xl font-extrabold text-[#0A2540] sm:text-4xl lg:text-5xl">
-                                Specialty Gas untuk kebutuhan khusus
+                                Specialty Gas untuk berbagai kebutuhan operasional
                             </h2>
+
                             <p className="mt-5 text-base sm:text-lg text-[#475569] leading-relaxed">
-                                Specialty Gas dirancang untuk kebutuhan yang lebih
-                                spesifik, mulai dari laboratorium, industri, hingga
-                                aplikasi yang memerlukan kualitas dan kontrol tinggi.
+                                Specialty Gas digunakan untuk mendukung berbagai
+                                kebutuhan operasional di industri, laboratorium,
+                                workshop, dan pekerjaan teknis yang memerlukan
+                                proses yang stabil dan terukur.
                             </p>
+
                         </div>
 
                         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+
                             {overviewCards.map((card) => (
                                 <div
                                     key={card.title}
@@ -280,32 +347,44 @@ export function SpecialtyGas() {
                                     <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#FFF0E6] text-[#FF6B00]">
                                         <CheckCircle2 size={22} />
                                     </div>
+
                                     <h3 className="font-display text-2xl font-bold text-[#0A2540]">
                                         {card.title}
                                     </h3>
+
                                     <p className="mt-4 text-base leading-relaxed text-[#475569]">
                                         {card.description}
                                     </p>
                                 </div>
                             ))}
+
                         </div>
                     </div>
                 </section>
 
+                {/* APPLICATIONS */}
                 <section className="bg-[#F8FAFC] py-20 lg:py-24">
                     <div className="aj-container">
+
                         <div className="mx-auto max-w-3xl text-center">
-                            <span className="aj-overline !text-[#FF6B00]">APLIKASI</span>
+
+                            <span className="aj-overline !text-[#FF6B00]">
+                                APLIKASI
+                            </span>
+
                             <h2 className="mt-4 font-display text-3xl font-extrabold text-[#0A2540] sm:text-4xl lg:text-5xl">
                                 Digunakan untuk berbagai kebutuhan
                             </h2>
+
                             <p className="mt-5 text-base sm:text-lg text-[#475569] leading-relaxed">
                                 Pilih kebutuhan Anda dan konsultasikan spesifikasi
                                 yang diperlukan kepada tim kami.
                             </p>
+
                         </div>
 
                         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+
                             {applications.map(({ title, description, icon: Icon }) => (
                                 <div
                                     key={title}
@@ -314,35 +393,49 @@ export function SpecialtyGas() {
                                     <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#FFF0E6] text-[#FF6B00]">
                                         <Icon size={22} />
                                     </div>
+
                                     <h3 className="font-display text-2xl font-bold text-[#0A2540]">
                                         {title}
                                     </h3>
+
                                     <p className="mt-4 text-base leading-relaxed text-[#475569]">
                                         {description}
                                     </p>
                                 </div>
                             ))}
+
                         </div>
                     </div>
                 </section>
 
+                {/* SPECIFICATION */}
                 <section id="spesifikasi" className="py-20 lg:py-24">
                     <div className="aj-container">
+
                         <div className="mx-auto max-w-3xl text-center">
-                            <span className="aj-overline !text-[#FF6B00]">SPESIFIKASI</span>
+
+                            <span className="aj-overline !text-[#FF6B00]">
+                                SPESIFIKASI
+                            </span>
+
                             <h2 className="mt-4 font-display text-3xl font-extrabold text-[#0A2540] sm:text-4xl lg:text-5xl">
                                 Detail Specialty Gas
                             </h2>
+
                             <p className="mt-5 text-base sm:text-lg text-[#475569] leading-relaxed">
                                 Spesifikasi produk dapat disesuaikan dengan kebutuhan
                                 penggunaan. Hubungi kami untuk memastikan grade,
                                 ukuran tabung, dan ketersediaan yang sesuai.
                             </p>
+
                         </div>
 
                         <div className="mt-12 grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-start">
+
                             <div className="rounded-2xl border border-[#E2E8F0] bg-white p-6 sm:p-8 shadow-sm">
+
                                 <ul className="space-y-4">
+
                                     {specChecklist.map((item) => (
                                         <li
                                             key={item}
@@ -351,16 +444,22 @@ export function SpecialtyGas() {
                                             <span className="mt-0.5 flex h-6 w-6 items-center justify-center rounded-full bg-[#FFF0E6] text-[#FF6B00]">
                                                 <CheckCircle2 size={15} />
                                             </span>
+
                                             <span>{item}</span>
                                         </li>
                                     ))}
+
                                 </ul>
                             </div>
 
                             <div className="overflow-hidden rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] shadow-sm">
+
                                 <div className="overflow-x-auto">
+
                                     <table className="min-w-full text-left text-sm">
+
                                         <tbody>
+
                                             {specRows.map(([label, value], index) => (
                                                 <tr
                                                     key={label}
@@ -373,32 +472,49 @@ export function SpecialtyGas() {
                                                     <th className="px-5 py-4 font-semibold text-[#0A2540] align-top">
                                                         {label}
                                                     </th>
+
                                                     <td className="px-5 py-4 text-[#475569] align-top">
                                                         {value}
                                                     </td>
                                                 </tr>
                                             ))}
+
                                         </tbody>
+
                                     </table>
+
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
 
+                {/* WHY AJG */}
                 <section className="bg-[#0A2540] py-20 text-white lg:py-24">
+
                     <div className="aj-container">
+
                         <div className="mx-auto max-w-3xl text-center">
-                            <span className="aj-overline !text-[#FF8B33]">MENGAPA MEMILIH KAMI</span>
+
+                            <span className="aj-overline !text-[#FF8B33]">
+                                MENGAPA MEMILIH KAMI
+                            </span>
+
                             <h2
                                 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl lg:text-5xl"
-                                style={{ color: "#FFFFFF", backgroundColor: "transparent" }}
+                                style={{
+                                    color: "#FFFFFF",
+                                    backgroundColor: "transparent",
+                                }}
                             >
                                 Supplier Specialty Gas untuk kebutuhan operasional Anda
                             </h2>
+
                         </div>
 
                         <div className="mt-12 grid gap-5 lg:grid-cols-3">
+
                             {whyAjgCards.map(({ title, description, icon: Icon }) => (
                                 <div
                                     key={title}
@@ -407,40 +523,66 @@ export function SpecialtyGas() {
                                     <div className="industry-icon-wrap inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-[#FF8B33]">
                                         <Icon size={22} />
                                     </div>
-                                    <h3 className="mt-5 font-display text-2xl font-bold" style={{ color: "#FFFFFF" }}>
+
+                                    <h3
+                                        className="mt-5 font-display text-2xl font-bold"
+                                        style={{ color: "#FFFFFF" }}
+                                    >
                                         {title}
                                     </h3>
-                                    <p className="mt-4 text-base leading-relaxed" style={{ color: "#FFFFFF" }}>
+
+                                    <p
+                                        className="mt-4 text-base leading-relaxed"
+                                        style={{ color: "#FFFFFF" }}
+                                    >
                                         {description}
                                     </p>
                                 </div>
                             ))}
+
                         </div>
                     </div>
                 </section>
 
+                {/* CTA */}
                 <section className="cta-bg relative overflow-hidden py-20 text-white lg:py-24">
+
                     <div className="absolute inset-0 dot-pattern-light opacity-40 pointer-events-none" />
+
                     <div className="absolute -top-32 -right-20 h-[420px] w-[420px] rounded-full bg-[#FF6B00]/18 blur-3xl" />
+
                     <div className="absolute -bottom-28 -left-16 h-[360px] w-[360px] rounded-full bg-[#FF6B00]/15 blur-3xl" />
 
                     <div className="aj-container relative z-10">
+
                         <div className="mx-auto max-w-3xl text-center">
-                            <span className="aj-overline !text-[#FF8B33]">BUTUH SPECIALTY GAS?</span>
-                            <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl lg:text-5xl" style={{ color: "#FFFFFF" }}>
+
+                            <span className="aj-overline !text-[#FF8B33]">
+                                BUTUH SPECIALTY GAS?
+                            </span>
+
+                            <h2
+                                className="mt-4 font-display text-3xl font-extrabold sm:text-4xl lg:text-5xl"
+                                style={{ color: "#FFFFFF" }}
+                            >
                                 Cek ketersediaan Specialty Gas sekarang
                             </h2>
-                            <p className="mt-5 text-base sm:text-lg leading-relaxed" style={{ color: "#FFFFFF" }}>
+
+                            <p
+                                className="mt-5 text-base sm:text-lg leading-relaxed"
+                                style={{ color: "#FFFFFF" }}
+                            >
                                 Sampaikan kebutuhan Anda kepada tim kami. Kami bantu
                                 cek ketersediaan, ukuran tabung, dan pengiriman.
                             </p>
 
                             <div className="mt-9 flex justify-center">
+
                                 <a
-                                    href={productWaLink}
+                                    href={specialtyGasWaLink}
                                     onClick={(e) => {
                                         e.preventDefault();
-                                        openWhatsAppLink(productWaLink);
+                                        openWhatsAppLink(specialtyGasWaLink);
                                     }}
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -449,21 +591,32 @@ export function SpecialtyGas() {
                                     <MessageCircle size={18} />
                                     Hubungi via WhatsApp
                                 </a>
+
                             </div>
+
                         </div>
                     </div>
                 </section>
 
+                {/* FAQ */}
                 <section className="bg-[#F8FAFC] py-20 lg:py-24">
+
                     <div className="aj-container max-w-4xl">
+
                         <div className="mx-auto max-w-3xl text-center">
-                            <span className="aj-overline !text-[#FF6B00]">FAQ</span>
+
+                            <span className="aj-overline !text-[#FF6B00]">
+                                FAQ
+                            </span>
+
                             <h2 className="mt-4 font-display text-3xl font-extrabold text-[#0A2540] sm:text-4xl lg:text-5xl">
                                 Pertanyaan tentang Specialty Gas
                             </h2>
+
                         </div>
 
                         <div className="mt-10 space-y-4">
+
                             {faqs.map(({ question, answer }) => (
                                 <details
                                     key={question}
@@ -472,11 +625,13 @@ export function SpecialtyGas() {
                                     <summary className="cursor-pointer list-none font-semibold text-[#0A2540] text-base sm:text-lg">
                                         {question}
                                     </summary>
+
                                     <p className="mt-3 text-base leading-relaxed text-[#475569]">
                                         {answer}
                                     </p>
                                 </details>
                             ))}
+
                         </div>
                     </div>
                 </section>
@@ -484,7 +639,11 @@ export function SpecialtyGas() {
 
             <Footer />
             <FloatingWhatsApp />
-            <div className="lg:hidden h-16" aria-hidden="true" />
+
+            <div
+                className="lg:hidden h-16"
+                aria-hidden="true"
+            />
         </div>
     );
 }

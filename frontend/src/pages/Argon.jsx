@@ -5,6 +5,7 @@ import {
     Factory,
     Flame,
     Hospital,
+    MapPin,
     MessageCircle,
     ShieldCheck,
     Truck,
@@ -13,72 +14,73 @@ import {
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { FloatingWhatsApp } from "../components/FloatingWhatsApp";
-import { buildWaLink, openWhatsAppLink } from "../lib/constants";
+import {
+    buildWaLink,
+    openWhatsAppLink,
+} from "../lib/constants";
 
-const productName = "Argon";
-const productFormula = "Ar";
-const productWaMessage =
+const argonWaMessage =
     "Halo Adi Jaya Gas, saya ingin menanyakan ketersediaan Argon. Mohon info harga dan ukuran tabung yang tersedia.";
-const productWaLink = buildWaLink(productWaMessage);
+const argonWaLink = buildWaLink(argonWaMessage);
 
 const overviewCards = [
     {
-        title: "Industri",
-        description: "Untuk kebutuhan operasional industri dan manufaktur.",
+        title: "TIG Welding",
+        description: "Argon digunakan sebagai shielding gas pada proses TIG welding untuk berbagai pekerjaan fabrikasi.",
     },
     {
-        title: "Workshop",
-        description: "Untuk kebutuhan workshop dan pekerjaan teknis yang presisi.",
+        title: "MIG Welding",
+        description: "Digunakan sebagai bagian dari shielding gas pada aplikasi MIG welding tertentu sesuai kebutuhan.",
     },
     {
-        title: "Welding",
-        description: "Mendukung proses pengelasan dengan kendali yang stabil.",
+        title: "Stainless Steel & Aluminium",
+        description: "Mendukung proses pengelasan stainless steel dan aluminium untuk kebutuhan workshop dan fabrikasi.",
     },
     {
-        title: "Kualitas",
-        description: "Untuk kebutuhan yang memerlukan hasil pekerjaan konsisten.",
+        title: "Fabrikasi",
+        description: "Untuk berbagai kebutuhan fabrikasi, workshop, dan pekerjaan industri.",
     },
 ];
 
 const applications = [
     {
-        title: "Welding",
+        title: "TIG Welding",
         description:
-            "Digunakan untuk berbagai kebutuhan pengelasan dan pekerjaan workshop.",
+            "Untuk proses TIG welding pada stainless steel, aluminium, dan berbagai material lainnya.",
         icon: Wrench,
     },
     {
-        title: "Cutting",
+        title: "MIG Welding",
         description:
-            "Mendukung proses pemotongan logam untuk kebutuhan fabrikasi.",
+            "Digunakan sebagai shielding gas pada aplikasi MIG welding tertentu.",
         icon: Flame,
     },
     {
         title: "Fabrikasi",
         description:
-            "Untuk kebutuhan operasional workshop dan industri fabrikasi.",
+            "Mendukung berbagai pekerjaan fabrikasi dan kebutuhan workshop industri.",
         icon: Factory,
     },
     {
-        title: "Medis",
+        title: "Laboratorium",
         description:
-            "Untuk kebutuhan fasilitas medis sesuai spesifikasi dan penggunaan.",
+            "Untuk kebutuhan laboratorium dan aplikasi profesional tertentu sesuai spesifikasi.",
         icon: Hospital,
     },
 ];
 
 const specChecklist = [
-    "Melayani kebutuhan bisnis dan industri",
+    "Melayani kebutuhan welding, fabrikasi, manufaktur, dan customer profesional.",
     "Ketersediaan dapat dikonfirmasi sebelum pemesanan",
     "Pengiriman ke area Tangerang dan Jakarta",
     "Melayani kebutuhan rutin maupun volume tertentu",
 ];
 
 const specRows = [
-    ["Nama Produk", productName],
-    ["Rumus Kimia", productFormula],
+    ["Nama Produk", "Argon"],
+    ["Rumus Kimia", "Ar"],
     ["Bentuk", "Compressed Gas"],
-    ["Kategori", "Industrial Gas"],
+    ["Kategori", "Industrial & Specialty Gas"],
     ["Kemasan", "Cylinder"],
     ["Ukuran Tabung", "Tersedia berdasarkan kebutuhan"],
     ["Grade", "Sesuai kebutuhan penggunaan"],
@@ -87,7 +89,7 @@ const specRows = [
 
 const whyAjgCards = [
     {
-        title: "Pengiriman Jabodetabek",
+        title: "Pengiriman",
         description:
             "Pengiriman ke seluruh Jabodetabek dan area sekitarnya.",
         icon: Truck,
@@ -95,7 +97,7 @@ const whyAjgCards = [
     {
         title: "Kebutuhan Bisnis",
         description:
-            "Melayani kebutuhan workshop, fabrikasi, manufaktur, dan customer profesional.",
+            "Melayani kebutuhan welding, fabrikasi, manufaktur, dan customer profesional.",
         icon: ShieldCheck,
     },
     {
@@ -106,26 +108,28 @@ const whyAjgCards = [
     },
 ];
 
+const shippingAreas = ["Jabodetabek & Sekitarnya"];
+
 const faqs = [
     {
         question: "Argon digunakan untuk apa?",
         answer:
-            "Argon digunakan untuk berbagai kebutuhan pengelasan, perlindungan proses, serta industri yang memerlukan hasil pekerjaan presisi dan konsisten.",
+            "Argon banyak digunakan sebagai shielding gas pada welding, terutama TIG dan beberapa aplikasi MIG, serta berbagai kebutuhan fabrikasi dan industri.",
     },
     {
         question: "Apakah Adi Jaya Gas menyediakan Argon untuk kebutuhan industri?",
         answer:
-            "Ya. Kami melayani kebutuhan argon untuk workshop, fabrikasi, manufaktur, dan kebutuhan industri lainnya.",
+            "Ya. Kami melayani kebutuhan Argon untuk welding, workshop, fabrikasi, manufaktur, dan berbagai kebutuhan profesional.",
     },
     {
-        question: "Apakah bisa dikirim ke Tangerang dan Jakarta?",
+        question: "Apakah Argon bisa digunakan untuk stainless steel dan aluminium?",
         answer:
-            "Ya. Kami melayani pengiriman di area Tangerang, Jakarta, dan area sekitar sesuai jangkauan pengiriman.",
+            "Ya. Argon dapat digunakan pada berbagai aplikasi welding stainless steel dan aluminium sesuai proses dan spesifikasi yang diperlukan.",
     },
     {
         question: "Bagaimana cara mengetahui harga Argon?",
         answer:
-            "Harga dapat berbeda berdasarkan ukuran tabung, jumlah kebutuhan, dan lokasi pengiriman. Hubungi kami untuk mendapatkan penawaran sesuai kebutuhan Anda.",
+            "Harga dapat berbeda berdasarkan grade, ukuran tabung, jumlah kebutuhan, dan lokasi pengiriman. Hubungi kami untuk mendapatkan penawaran sesuai kebutuhan Anda.",
     },
 ];
 
@@ -155,7 +159,9 @@ export function Argon() {
 
                     <div className="aj-container relative z-10 grid gap-10 lg:grid-cols-12 lg:items-center">
                         <div className="lg:col-span-7">
-                            <span className="aj-overline !text-[#FF8B33]">ARGON Ar</span>
+                            <span className="aj-overline !text-[#FF8B33]">
+                                ARGON Ar
+                            </span>
                             <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight text-white">
                                 <span style={{ color: "#FFFFFF" }}>Supplier Argon</span>
                                 <span className="block">
@@ -163,17 +169,16 @@ export function Argon() {
                                 </span>
                             </h1>
                             <p className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed" style={{ color: "#FFFFFF" }}>
-                                Argon untuk kebutuhan industri, pengelasan, dan
-                                proses fabrikasi yang membutuhkan kontrol yang
-                                stabil dan hasil kerja yang konsisten.
+                                Argon untuk kebutuhan industri, welding, cutting,
+                                fabrikasi, medis, dan berbagai kebutuhan profesional.
                             </p>
 
                             <div className="mt-9 flex flex-wrap gap-3">
                                 <a
-                                    href={productWaLink}
+                                    href={argonWaLink}
                                     onClick={(e) => {
                                         e.preventDefault();
-                                        openWhatsAppLink(productWaLink);
+                                        openWhatsAppLink(argonWaLink);
                                     }}
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -225,7 +230,7 @@ export function Argon() {
                                                     Purity
                                                 </p>
                                                 <p className="text-sm font-bold text-[#FFB278]">
-                                                    99.9%+
+                                                    Sesuai kebutuhan
                                                 </p>
                                             </div>
                                         </div>
@@ -246,7 +251,7 @@ export function Argon() {
                                             <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
                                                 <span style={{ color: "#FFFFFF" }}>Penggunaan</span>
                                                 <span className="font-semibold" style={{ color: "#FFFFFF" }}>
-                                                    Industri & Welding
+                                                    Welding & Industri
                                                 </span>
                                             </div>
                                         </div>
@@ -260,14 +265,17 @@ export function Argon() {
                 <section className="py-20 lg:py-24">
                     <div className="aj-container">
                         <div className="mx-auto max-w-3xl text-center">
-                            <span className="aj-overline !text-[#FF6B00]">ARGON</span>
+                            <span className="aj-overline !text-[#FF6B00]">
+                                ARGON
+                            </span>
                             <h2 className="mt-4 font-display text-3xl font-extrabold text-[#0A2540] sm:text-4xl lg:text-5xl">
                                 Argon untuk berbagai kebutuhan operasional
                             </h2>
                             <p className="mt-5 text-base sm:text-lg text-[#475569] leading-relaxed">
-                                Argon berperan penting dalam menjaga kualitas proses
-                                pengelasan, fabrikasi, dan pekerjaan industri yang
-                                membutuhkan perlindungan dan presisi tinggi.
+                                Argon digunakan untuk mendukung berbagai kebutuhan
+                                operasional di industri, workshop, dan pekerjaan
+                                teknis yang memerlukan proses yang stabil dan
+                                terukur.
                             </p>
                         </div>
 
@@ -295,7 +303,9 @@ export function Argon() {
                 <section className="bg-[#F8FAFC] py-20 lg:py-24">
                     <div className="aj-container">
                         <div className="mx-auto max-w-3xl text-center">
-                            <span className="aj-overline !text-[#FF6B00]">APLIKASI</span>
+                            <span className="aj-overline !text-[#FF6B00]">
+                                APLIKASI
+                            </span>
                             <h2 className="mt-4 font-display text-3xl font-extrabold text-[#0A2540] sm:text-4xl lg:text-5xl">
                                 Digunakan untuk berbagai kebutuhan
                             </h2>
@@ -329,7 +339,9 @@ export function Argon() {
                 <section id="spesifikasi" className="py-20 lg:py-24">
                     <div className="aj-container">
                         <div className="mx-auto max-w-3xl text-center">
-                            <span className="aj-overline !text-[#FF6B00]">SPESIFIKASI</span>
+                            <span className="aj-overline !text-[#FF6B00]">
+                                SPESIFIKASI
+                            </span>
                             <h2 className="mt-4 font-display text-3xl font-extrabold text-[#0A2540] sm:text-4xl lg:text-5xl">
                                 Detail Argon
                             </h2>
@@ -389,7 +401,9 @@ export function Argon() {
                 <section className="bg-[#0A2540] py-20 text-white lg:py-24">
                     <div className="aj-container">
                         <div className="mx-auto max-w-3xl text-center">
-                            <span className="aj-overline !text-[#FF8B33]">MENGAPA MEMILIH KAMI</span>
+                            <span className="aj-overline !text-[#FF8B33]">
+                                MENGAPA MEMILIH KAMI
+                            </span>
                             <h2
                                 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl lg:text-5xl"
                                 style={{ color: "#FFFFFF", backgroundColor: "transparent" }}
@@ -426,7 +440,9 @@ export function Argon() {
 
                     <div className="aj-container relative z-10">
                         <div className="mx-auto max-w-3xl text-center">
-                            <span className="aj-overline !text-[#FF8B33]">BUTUH ARGON?</span>
+                            <span className="aj-overline !text-[#FF8B33]">
+                                BUTUH ARGON?
+                            </span>
                             <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl lg:text-5xl" style={{ color: "#FFFFFF" }}>
                                 Cek ketersediaan Argon sekarang
                             </h2>
@@ -437,10 +453,10 @@ export function Argon() {
 
                             <div className="mt-9 flex justify-center">
                                 <a
-                                    href={productWaLink}
+                                    href={argonWaLink}
                                     onClick={(e) => {
                                         e.preventDefault();
-                                        openWhatsAppLink(productWaLink);
+                                        openWhatsAppLink(argonWaLink);
                                     }}
                                     target="_blank"
                                     rel="noopener noreferrer"
