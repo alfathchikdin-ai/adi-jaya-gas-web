@@ -18,7 +18,7 @@ export const FloatingWhatsApp = () => {
     return (
         <>
             {/* Floating WhatsApp Button */}
-            <div className="fixed bottom-5 right-5 lg:bottom-7 lg:right-7 z-40 flex flex-col items-end gap-3">
+            <div className="fixed bottom-[76px] right-4 sm:bottom-5 sm:right-5 lg:bottom-7 lg:right-7 z-40 flex flex-col items-end gap-3">
                 {open && (
                     <div
                         data-testid="whatsapp-popup"
@@ -32,16 +32,19 @@ export const FloatingWhatsApp = () => {
                                         className="text-white"
                                     />
                                 </div>
+
                                 <div className="text-white">
                                     <div className="font-display font-bold text-sm">
                                         Tim Adi Jaya Gas
                                     </div>
+
                                     <div className="text-[11px] text-white/70 flex items-center gap-1.5">
                                         <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                                         Online sekarang
                                     </div>
                                 </div>
                             </div>
+
                             <button
                                 onClick={() => setOpen(false)}
                                 aria-label="Tutup"
@@ -50,11 +53,13 @@ export const FloatingWhatsApp = () => {
                                 <X size={16} />
                             </button>
                         </div>
+
                         <div className="p-4 bg-[#F8FAFC]">
                             <div className="bg-white rounded-lg p-3 text-sm text-[#334155] shadow-sm border border-[#E2E8F0]">
                                 Halo! 👋 Ada yang bisa kami bantu? Tim kami
                                 siap membantu konsultasi kebutuhan gas Anda.
                             </div>
+
                             <a
                                 href={WA_LINK}
                                 onClick={(e) => {
@@ -96,6 +101,7 @@ export const FloatingWhatsApp = () => {
                 >
                     Telepon
                 </a>
+
                 <a
                     href={WA_LINK}
                     onClick={(e) => {

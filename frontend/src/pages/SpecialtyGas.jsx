@@ -244,7 +244,7 @@ export function SpecialtyGas() {
                                     {/* SPECIALTY GAS CARD */}
                                     <div className="rounded-2xl border border-white/10 bg-[#0A2540]/60 p-6">
 
-                                        <div className="relative flex items-center justify-start">
+                                        <div className="relative flex items-center justify-start max-sm:flex-col max-sm:items-start max-sm:gap-4">
     <p
         className="text-sm md:text-base uppercase tracking-[0.24em] font-semibold text-left"
                                                 style={{ color: "#FFFFFF" }}
@@ -252,7 +252,7 @@ export function SpecialtyGas() {
                                                 SPECIALTY GAS
                                             </p>
 
-                                            <div className="absolute right-0 rounded-xl border border-[#FF6B00]/30 bg-[#FF6B00]/10 px-3 py-2 text-right">
+                                            <div className="absolute right-0 rounded-xl border border-[#FF6B00]/30 bg-[#FF6B00]/10 px-3 py-2 text-right max-sm:relative max-sm:right-auto max-sm:w-full max-sm:text-left">
                                                 <p className="text-[10px] uppercase tracking-[0.18em] text-[#FFB278]">
                                                     Purity
                                                 </p>
@@ -265,39 +265,39 @@ export function SpecialtyGas() {
 
                                         <div className="mt-6 space-y-3 text-sm text-white">
 
-                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
+                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10 max-sm:flex-col max-sm:items-start max-sm:gap-1">
                                                 <span style={{ color: "#FFFFFF" }}>
                                                     Volume
                                                 </span>
 
                                                 <span
-                                                    className="font-semibold"
+                                                    className="font-semibold max-sm:text-left max-sm:w-full sm:text-right"
                                                     style={{ color: "#FFFFFF" }}
                                                 >
                                                     Sesuai kebutuhan
                                                 </span>
                                             </div>
 
-                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
+                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10 max-sm:flex-col max-sm:items-start max-sm:gap-1">
                                                 <span style={{ color: "#FFFFFF" }}>
                                                     Pengiriman
                                                 </span>
 
                                                 <span
-                                                    className="font-semibold"
+                                                    className="font-semibold max-sm:text-left max-sm:w-full sm:text-right"
                                                     style={{ color: "#FFFFFF" }}
                                                 >
                                                     Jabodetabek & Sekitarnya
                                                 </span>
                                             </div>
 
-                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
+                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10 max-sm:flex-col max-sm:items-start max-sm:gap-1">
                                                 <span style={{ color: "#FFFFFF" }}>
                                                     Penggunaan
                                                 </span>
 
                                                 <span
-                                                    className="font-semibold"
+                                                    className="font-semibold max-sm:text-left max-sm:w-full sm:text-right"
                                                     style={{ color: "#FFFFFF" }}
                                                 >
                                                     Laboratorium & Industri

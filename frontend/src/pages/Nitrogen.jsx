@@ -211,7 +211,7 @@ export function Nitrogen() {
                                     </div>
 
                                     <div className="rounded-2xl border border-white/10 bg-[#0A2540]/60 p-6">
-                                        <div className="flex items-center justify-between gap-4">
+                                        <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
                                             <div>
                                                 <p className="text-xs uppercase tracking-[0.24em]" style={{ color: "#CBD5E1" }}>
                                                     Industrial Grade
@@ -220,7 +220,7 @@ export function Nitrogen() {
                                                     N₂
                                                 </p>
                                             </div>
-                                            <div className="rounded-xl border border-[#FF6B00]/30 bg-[#FF6B00]/10 px-3 py-2 text-right">
+                                            <div className="w-full rounded-xl border border-[#FF6B00]/30 bg-[#FF6B00]/10 px-3 py-2 text-left sm:w-auto sm:text-right">
                                                 <p className="text-[10px] uppercase tracking-[0.18em] text-[#FFB278]">
                                                     Purity
                                                 </p>
@@ -231,21 +231,21 @@ export function Nitrogen() {
                                         </div>
 
                                         <div className="mt-6 space-y-3 text-sm text-white">
-                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
+                                            <div className="flex flex-col items-start gap-1 rounded-lg bg-white/5 px-3 py-2 border border-white/10 sm:flex-row sm:items-center sm:justify-between">
                                                 <span style={{ color: "#FFFFFF" }}>Volume</span>
-                                                <span className="font-semibold" style={{ color: "#FFFFFF" }}>
+                                                <span className="font-semibold text-left sm:text-right" style={{ color: "#FFFFFF" }}>
                                                     Sesuai kebutuhan
                                                 </span>
                                             </div>
-                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
+                                            <div className="flex flex-col items-start gap-1 rounded-lg bg-white/5 px-3 py-2 border border-white/10 sm:flex-row sm:items-center sm:justify-between">
                                                 <span style={{ color: "#FFFFFF" }}>Pengiriman</span>
-                                                <span className="font-semibold" style={{ color: "#FFFFFF" }}>
+                                                <span className="font-semibold text-left sm:text-right" style={{ color: "#FFFFFF" }}>
                                                     Jabodetabek & Sekitarnya
                                                 </span>
                                             </div>
-                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
+                                            <div className="flex flex-col items-start gap-1 rounded-lg bg-white/5 px-3 py-2 border border-white/10 sm:flex-row sm:items-center sm:justify-between">
                                                 <span style={{ color: "#FFFFFF" }}>Penggunaan</span>
-                                                <span className="font-semibold" style={{ color: "#FFFFFF" }}>
+                                                <span className="font-semibold text-left sm:text-right" style={{ color: "#FFFFFF" }}>
                                                     Industri & Manufaktur
                                                 </span>
                                             </div>

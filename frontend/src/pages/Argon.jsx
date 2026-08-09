@@ -203,8 +203,8 @@ export function Argon() {
                         <div className="lg:col-span-5">
                             <div className="relative mx-auto max-w-md">
                                 <div className="absolute -inset-4 rounded-full bg-[#FF6B00]/20 blur-3xl" />
-                                <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 p-6 shadow-2xl backdrop-blur-xl">
-                                    <div className="flex items-center justify-between mb-6">
+                                <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 p-4 lg:p-6 shadow-2xl backdrop-blur-xl">
+                                    <div className="flex flex-col items-start gap-3 mb-6 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
                                         <div className="aj-overline !text-[#FF8B33]">
                                             Argon Ar
                                         </div>
@@ -215,8 +215,8 @@ export function Argon() {
                                         </div>
                                     </div>
 
-                                    <div className="rounded-2xl border border-white/10 bg-[#0A2540]/60 p-6">
-                                        <div className="flex items-center justify-between gap-4">
+                                    <div className="rounded-2xl border border-white/10 bg-[#0A2540]/60 p-4 lg:p-6">
+                                        <div className="flex flex-col items-start gap-4 lg:flex-row lg:items-center lg:justify-between">
                                             <div>
                                                 <p className="text-xs uppercase tracking-[0.24em]" style={{ color: "#CBD5E1" }}>
                                                     Industrial Grade
@@ -225,7 +225,7 @@ export function Argon() {
                                                     Ar
                                                 </p>
                                             </div>
-                                            <div className="rounded-xl border border-[#FF6B00]/30 bg-[#FF6B00]/10 px-3 py-2 text-right">
+                                            <div className="w-full rounded-xl border border-[#FF6B00]/30 bg-[#FF6B00]/10 px-3 py-2 text-left lg:w-auto lg:text-right">
                                                 <p className="text-[10px] uppercase tracking-[0.18em] text-[#FFB278]">
                                                     Purity
                                                 </p>
@@ -235,22 +235,22 @@ export function Argon() {
                                             </div>
                                         </div>
 
-                                        <div className="mt-6 space-y-3 text-sm text-white">
-                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
+                                        <div className="mt-5 space-y-3 text-sm text-white lg:mt-6">
+                                            <div className="flex flex-col items-start gap-1 rounded-lg bg-white/5 px-3 py-2 border border-white/10 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
                                                 <span style={{ color: "#FFFFFF" }}>Volume</span>
-                                                <span className="font-semibold" style={{ color: "#FFFFFF" }}>
+                                                <span className="font-semibold break-words text-left lg:text-right" style={{ color: "#FFFFFF" }}>
                                                     Sesuai kebutuhan
                                                 </span>
                                             </div>
-                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
+                                            <div className="flex flex-col items-start gap-1 rounded-lg bg-white/5 px-3 py-2 border border-white/10 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
                                                 <span style={{ color: "#FFFFFF" }}>Pengiriman</span>
-                                                <span className="font-semibold" style={{ color: "#FFFFFF" }}>
+                                                <span className="font-semibold break-words text-left lg:text-right" style={{ color: "#FFFFFF" }}>
                                                     Jabodetabek & Sekitarnya
                                                 </span>
                                             </div>
-                                            <div className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2 border border-white/10">
+                                            <div className="flex flex-col items-start gap-1 rounded-lg bg-white/5 px-3 py-2 border border-white/10 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
                                                 <span style={{ color: "#FFFFFF" }}>Penggunaan</span>
-                                                <span className="font-semibold" style={{ color: "#FFFFFF" }}>
+                                                <span className="font-semibold break-words text-left lg:text-right" style={{ color: "#FFFFFF" }}>
                                                     Welding & Industri
                                                 </span>
                                             </div>
