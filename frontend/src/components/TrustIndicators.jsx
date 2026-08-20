@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const stats = [
-    { value: "500+", label: "Pelanggan Aktif", suffix: "" },
+    { value: "120+", label: "Pelanggan Aktif", suffix: "" },
     { value: "12", label: "Tahun Pengalaman", suffix: "+" },
     { value: "8", label: "Wilayah Jangkauan", suffix: "" },
     { value: "20", label: "Varian Produk Gas", suffix: "+" },

@@ -30,7 +30,7 @@ Premium B2B landing page for Indonesian industrial gas supplier "CV. Adi Jaya Ga
 ## What's Implemented (2025-12)
 - [x] Sticky Navbar with mobile hamburger, phone display, primary CTA
 - [x] Hero: gradient navy + facility background, dual CTA, 4 trust features, floating "Quick Quote" card
-- [x] Trust Indicators: 500+ customers · 12+ years · 8 wilayah · 20+ produk
+- [x] Trust Indicators: 120+ customers · 12+ years · 8 wilayah · 20+ produk
 - [x] Products grid (6 cards): O₂, N₂, Ar, CO₂, He, Specialty/UHP — each with WA CTA
 - [x] Why Choose Us: 6 reason cards (one accent dark card)
 - [x] Industries: 6 sectors with hover-to-orange interaction
