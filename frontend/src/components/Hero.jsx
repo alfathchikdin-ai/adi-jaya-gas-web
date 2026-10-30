@@ -35,24 +35,9 @@ export const Hero = () => {
                     className="lg:col-span-7 text-white"
                 >
                     <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold !text-white leading-[1.05] tracking-tight">
-                        Supplier Gas Industri{" "}
-                        <span className="relative inline-block">
-                            <span className="gradient-text">Terpercaya</span>
-                            <svg
-                                className="absolute -bottom-2 left-0 w-full"
-                                viewBox="0 0 200 8"
-                                preserveAspectRatio="none"
-                            >
-                                <path
-                                    d="M0 4 Q 50 0 100 4 T 200 4"
-                                    stroke="#FF6B00"
-                                    strokeWidth="3"
-                                    fill="none"
-                                />
-                            </svg>
-                        </span>{" "}
-                        untuk Kebutuhan Bisnis Anda
-                    </h1>
+    Gases for Your{" "}
+    <span className="gradient-text">Industry</span>
+</h1>
 
                     <p className="mt-6 text-lg lg:text-xl text-white/80 leading-relaxed max-w-2xl">
                         Menyediakan gas industri, medis, dan specialty gas
@@ -62,24 +47,15 @@ export const Hero = () => {
                     </p>
 
                     <div className="mt-8 flex flex-wrap gap-3">
-                        <a
-                            href={WA_LINK}
-                            onClick={(e) => {
-                                e.preventDefault();
-                                openWhatsAppLink(WA_LINK);
-                            }}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            data-testid="hero-primary-cta"
-                            className="btn-primary !px-7 !py-3.5 text-base group"
-                        >
-                            Konsultasi Sekarang
-                            <ArrowRight
-                                size={18}
-                                className="group-hover:translate-x-1 transition-transform"
-                            />
-                        </a>
-                        <a
+    
+<a
+  href="#produk"
+  data-testid="hero-primary-cta"
+  className="btn-primary !px-7 !py-3.5 text-base"
+>
+  Produk Kami
+</a>
+    <a
                             href={WA_LINK}
                             onClick={(e) => {
                                 e.preventDefault();
